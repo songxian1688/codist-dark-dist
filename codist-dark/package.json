@@ -1,0 +1,23 @@
+{
+  "name": "codist-dark",
+  "displayName": "Codist Dark",
+  "description": "一款好看的通用深色主题：配色移植自 Visual Studio Codist 插件，关键字按用途分层着色，类型、字段、属性、方法一目了然；C# 与 Python 各有专属配色、互不冲突，同时为 Avalonia XAML (.axaml) 提供了标签/属性/绑定配色，深色背景护眼耐看",
+  "version": "0.0.7",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Codist Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/codist-dark-color-theme.json"
+      }
+    ]
+  },
+  "readme": "README.md"
+}

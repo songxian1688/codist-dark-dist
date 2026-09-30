@@ -1,0 +1,467 @@
+{
+  "name": "Codist Dark",
+  "type": "dark",
+  "semanticHighlighting": true,
+  "colors": {
+    "editor.background": "#2b2b2b",
+    "editor.foreground": "#dcdcdc",
+    "editorCursor.foreground": "#f0f0f0",
+    "editor.lineHighlightBackground": "#202424",
+    "editor.selectionBackground": "#08335e",
+    "editorLineNumber.foreground": "#808080",
+    "editorLineNumber.activeForeground": "#bdbdbd",
+    "editorGutter.background": "#282828",
+    "editorWhitespace.foreground": "#686868",
+    "editorIndentGuide.background1": "#404040",
+    "editorIndentGuide.activeBackground1": "#666666",
+    "editorRuler.foreground": "#404040",
+    "sideBar.background": "#262626",
+    "activityBar.background": "#262626",
+    "panel.background": "#262626",
+    "statusBar.background": "#262626",
+    "terminal.background": "#262626",
+    "tab.activeBackground": "#2b2b2b",
+    "tab.activeForeground": "#ffffff",
+    "tab.activeBorderTop": "#3794ff",
+    "tab.inactiveBackground": "#1e1e1e",
+    "tab.inactiveForeground": "#8a8a8a",
+    "editorGroupHeader.tabsBackground": "#1a1a1a"
+  },
+  "tokenColors": [
+    {
+      "name": "AXAML/XML comment (gray)",
+      "scope": "comment.block.xml",
+      "settings": { "foreground": "#808080", "fontStyle": "italic" }
+    },
+    {
+      "name": "Comment (Codist: Comment)",
+      "scope": ["comment.cs", "punctuation.definition.comment.cs"],
+      "settings": { "foreground": "#dfdfdf", "fontStyle": "italic" }
+    },
+    {
+      "name": "XML Doc comment (same green as line comment)",
+      "scope": "comment.block.documentation.cs",
+      "settings": { "foreground": "#57a64a", "fontStyle": "italic" }
+    },
+    {
+      "name": "XML Doc tag name (Codist: xml doc comment - name)",
+      "scope": "comment.block.documentation.cs entity.name.tag.cs",
+      "settings": { "foreground": "#7eab6d" }
+    },
+    {
+      "name": "Preprocessor (Codist: preprocessor text)",
+      "scope": "keyword.preprocessor",
+      "settings": { "foreground": "#ffffff", "background": "#0080ff", "fontStyle": "bold" }
+    },
+    {
+      "name": "Control flow keyword (Codist: C# Control flow keyword)",
+      "scope": ["keyword.control.conditional", "keyword.control.exception"],
+      "settings": { "foreground": "#e28e3a", "fontStyle": "italic" }
+    },
+    {
+      "name": "Branching keyword (Codist: C# Branching keyword)",
+      "scope": "keyword.control.flow",
+      "settings": { "foreground": "#8080ff" }
+    },
+    {
+      "name": "Loop keyword (Codist: C# Loop keyword)",
+      "scope": "keyword.control.loop",
+      "settings": { "foreground": "#40cfff", "fontStyle": "bold" }
+    },
+    {
+      "name": "Resource keyword (Codist: C# Resource keyword)",
+      "scope": "keyword.control.context",
+      "settings": { "foreground": "#cf3030", "fontStyle": "bold" }
+    },
+    {
+      "name": "Type cast keyword (Codist: C# Type cast keyword)",
+      "scope": [
+        "keyword.operator.expression.as.cs",
+        "keyword.operator.expression.pattern.is.cs"
+      ],
+      "settings": { "foreground": "#00b900", "fontStyle": "bold" }
+    },
+    {
+      "name": "Abstraction keyword (Codist: C# Abstraction keyword)",
+      "scope": ["storage.modifier.abstract.cs", "storage.modifier.interface.cs"],
+      "settings": { "foreground": "#0060bf", "fontStyle": "bold" }
+    },
+    {
+      "name": "Namespace name (Codist: C# Namespace)",
+      "scope": "entity.name.type.namespace",
+      "settings": { "foreground": "#ec00ec" }
+    },
+    {
+      "name": "Class declaration (Codist: C# Declaration)",
+      "scope": "entity.name.type.class.cs",
+      "settings": { "foreground": "#beb432" }
+    },
+    {
+      "name": "Struct name (Codist: struct name)",
+      "scope": "entity.name.type.struct.cs",
+      "settings": { "foreground": "#4eb0c9" }
+    },
+    {
+      "name": "Interface name (Codist: interface name)",
+      "scope": "entity.name.type.interface.cs",
+      "settings": { "foreground": "#00acff" }
+    },
+    {
+      "name": "Enum name (Codist: enum name)",
+      "scope": "entity.name.type.enum.cs",
+      "settings": { "foreground": "#c94ec9" }
+    },
+    {
+      "name": "Delegate name (Codist: delegate name)",
+      "scope": "entity.name.type.delegate.cs",
+      "settings": { "foreground": "#b5ffff", "background": "#00404080" }
+    },
+    {
+      "name": "Type parameter (Codist: C# Type parameter)",
+      "scope": "entity.name.type.type-parameter.cs",
+      "settings": { "foreground": "#ffb693" }
+    },
+    {
+      "name": "Method / member declaration (Codist: C# Method + Member declaration)",
+      "scope": "entity.name.function.cs",
+      "settings": { "foreground": "#e46b6b" }
+    },
+    {
+      "name": "Property (Codist: C# Property)",
+      "scope": ["entity.name.variable.property.cs", "variable.other.object.property.cs"],
+      "settings": { "foreground": "#7abcfe" }
+    },
+    {
+      "name": "Field (Codist: C# Field)",
+      "scope": "entity.name.variable.field.cs",
+      "settings": { "foreground": "#acac00", "fontStyle": "italic" }
+    },
+    {
+      "name": "Variable inside getter",
+      "scope": "meta.accessor.getter.cs variable.other.readwrite.cs",
+      "settings": { "foreground": "#ff44a2" }
+    },
+    {
+      "name": "Accessor punctuation in getter",
+      "scope": "meta.accessor.getter.cs punctuation.accessor.cs",
+      "settings": { "foreground": "#7abcfe" }
+    },
+    {
+      "name": "Preprocessor hash",
+      "scope": "meta.preprocessor.cs punctuation.separator.hash.cs",
+      "settings": { "foreground": "#9b9b9b" }
+    },
+    {
+      "name": "Setter value keyword",
+      "scope": "meta.accessor.setter.cs variable.other.value.cs",
+      "settings": { "foreground": "#ff44a2" }
+    },
+    {
+      "name": "Null in getter",
+      "scope": "meta.accessor.getter.cs constant.language.null.cs",
+      "settings": { "foreground": "#569cd6" }
+    },
+    {
+      "name": "Line comment (VS default green)",
+      "scope": "comment.line.double-slash.cs",
+      "settings": { "foreground": "#57a64a", "fontStyle": "italic" }
+    },
+    {
+      "name": "Line comment slashes",
+      "scope": "comment.line.double-slash.cs punctuation.definition.comment.cs",
+      "settings": { "foreground": "#57a64a", "fontStyle": "italic" }
+    },
+    {
+      "name": "Block comment (dark green)",
+      "scope": ["comment.block.cs", "comment.block.cs punctuation.definition.comment.cs"],
+      "settings": { "foreground": "#3d7a36", "fontStyle": "italic" }
+    },
+    {
+      "name": "Const field (Codist: C# Const field)",
+      "scope": ["variable.other.constant.cs", "entity.name.variable.enum-member.cs"],
+      "settings": { "foreground": "#c94ec9" }
+    },
+    {
+      "name": "Event (Codist: C# Event)",
+      "scope": "entity.name.variable.event.cs",
+      "settings": { "foreground": "#22ff91", "background": "#00400080" }
+    },
+    {
+      "name": "Local declaration (Codist: C# Local declaration)",
+      "scope": "entity.name.variable.local.cs",
+      "settings": { "foreground": "#c5790f", "background": "#777777" }
+    },
+    {
+      "name": "Parameter (Codist: C# Parameter)",
+      "scope": "entity.name.variable.parameter.cs",
+      "settings": { "foreground": "#ff44a2", "fontStyle": "italic" }
+    },
+    {
+      "name": "Label (Codist: C# Label)",
+      "scope": "entity.name.label.cs",
+      "settings": { "foreground": "#ffffff", "background": "#0000ff", "fontStyle": "bold" }
+    },
+    {
+      "name": "Attribute notation (Codist: C# Attribute notation)",
+      "scope": ["entity.other.attribute-name.cs", "keyword.other.attribute-specifier.cs"],
+      "settings": { "foreground": "#808080", "fontStyle": "italic" }
+    },
+    {
+      "name": "Number (VS default #B5CEA8 + Codist bold)",
+      "scope": "constant.numeric",
+      "settings": { "foreground": "#b5cea8", "fontStyle": "bold" }
+    },
+    {
+      "name": "String (VS dark default)",
+      "scope": ["string", "constant.character.escape.cs"],
+      "settings": { "foreground": "#d69d85" }
+    },
+    {
+      "name": "Keyword (VS dark default #569CD6)",
+      "scope": [
+        "keyword",
+        "storage.modifier",
+        "storage.type",
+        "variable.language",
+        "keyword.operator.expression.new.cs",
+        "keyword.operator.expression.await.cs",
+        "keyword.operator.expression.with.cs",
+        "keyword.operator.expression.query"
+      ],
+      "settings": { "foreground": "#569cd6" }
+    },
+    {
+      "name": "Operator / Punctuation (VS dark default #B4B4B4)",
+      "scope": ["keyword.operator", "punctuation"],
+      "settings": { "foreground": "#b4b4b4" }
+    },
+    {
+      "name": "Type usage fallback (VS dark class name #4EC9B0)",
+      "scope": "entity.name.type",
+      "settings": { "foreground": "#4ec9b0" }
+    },
+    {
+      "name": "XML Doc comment /// (same green as //, 放最后确保优先级)",
+      "scope": [
+        "comment.block.documentation.cs",
+        "comment.block.documentation.cs punctuation.definition.comment.cs"
+      ],
+      "settings": { "foreground": "#57a64a", "fontStyle": "italic" }
+    },
+    {
+      "name": "AXAML/XML comment (gray italic)",
+      "scope": "comment.block.xml",
+      "settings": { "foreground": "#808080", "fontStyle": "italic" }
+    },
+    {
+      "name": "AXAML/XML tag name (Codist style cyan-teal)",
+      "scope": "entity.name.tag.xml",
+      "settings": { "foreground": "#4ec9b0" }
+    },
+    {
+      "name": "AXAML/XML tag namespace prefix (e.g. x:, local:, styles:)",
+      "scope": "entity.name.tag.namespace.xml",
+      "settings": { "foreground": "#9cdcfe" }
+    },
+    {
+      "name": "AXAML/XML tag local name",
+      "scope": "entity.name.tag.localname.xml",
+      "settings": { "foreground": "#4ec9b0" }
+    },
+    {
+      "name": "AXAML/XML tag punctuation (<> </>)",
+      "scope": "punctuation.definition.tag.xml",
+      "settings": { "foreground": "#808080" }
+    },
+    {
+      "name": "AXAML/XML attribute name (light blue)",
+      "scope": "entity.other.attribute-name.xml",
+      "settings": { "foreground": "#9cdcfe" }
+    },
+    {
+      "name": "AXAML/XML attribute namespace prefix (assists:, x:)",
+      "scope": "entity.other.attribute-name.namespace.xml",
+      "settings": { "foreground": "#c586c0" }
+    },
+    {
+      "name": "AXAML/XML attribute local name (yellow)",
+      "scope": "entity.other.attribute-name.localname.xml",
+      "settings": { "foreground": "#dcdcaa" }
+    },
+    {
+      "name": "AXAML/XML namespace separator ':' ",
+      "scope": "punctuation.separator.namespace.xml",
+      "settings": { "foreground": "#b4b4b4" }
+    },
+    {
+      "name": "AXAML/XML double-quoted string (incl. {Binding}, {StaticResource})",
+      "scope": "string.quoted.double.xml",
+      "settings": { "foreground": "#ce9178" }
+    },
+    {
+      "name": "AXAML/XML single-quoted string",
+      "scope": "string.quoted.single.xml",
+      "settings": { "foreground": "#ce9178" }
+    },
+    {
+      "name": "AXAML/XML entity (e.g. &amp;)",
+      "scope": "constant.character.entity.xml",
+      "settings": { "foreground": "#b5cea8" }
+    },
+
+    {
+      "name": "Python comment (Codist: same green as C# line comment)",
+      "scope": ["comment.line.number-sign.python", "punctuation.definition.comment.python"],
+      "settings": { "foreground": "#57a64a", "fontStyle": "italic" }
+    },
+    {
+      "name": "Python codetag in comment (TODO/FIXME/NOTE)",
+      "scope": "keyword.codetag.notation.python",
+      "settings": { "foreground": "#8ec07c", "fontStyle": "bold italic" }
+    },
+    {
+      "name": "Python docstring (Codist: same green as C# XML doc comment)",
+      "scope": "string.quoted.docstring",
+      "settings": { "foreground": "#57a64a", "fontStyle": "italic" }
+    },
+    {
+      "name": "Python control-flow keyword (Codist: C# Control flow keyword)",
+      "scope": "keyword.control.flow.python",
+      "settings": { "foreground": "#e28e3a", "fontStyle": "italic" }
+    },
+    {
+      "name": "Python import keyword (Codist: C# Branching keyword purple)",
+      "scope": "keyword.control.import.python",
+      "settings": { "foreground": "#8080ff" }
+    },
+    {
+      "name": "Python def / class / lambda / async keyword (Codist keyword blue, bold)",
+      "scope": [
+        "storage.type.function.python",
+        "storage.type.function.async.python",
+        "storage.type.function.lambda.python",
+        "storage.type.class.python",
+        "storage.type.type.python",
+        "storage.modifier.declaration.python"
+      ],
+      "settings": { "foreground": "#569cd6", "fontStyle": "bold" }
+    },
+    {
+      "name": "Python True / False / None / NotImplemented / Ellipsis (Codist: C# null keyword blue)",
+      "scope": "constant.language.python",
+      "settings": { "foreground": "#569cd6", "fontStyle": "bold" }
+    },
+    {
+      "name": "Python function name (def + call) (Codist: C# Method)",
+      "scope": "entity.name.function.python",
+      "settings": { "foreground": "#e46b6b" }
+    },
+    {
+      "name": "Python class / base class name (Codist: C# class teal)",
+      "scope": ["entity.name.type.class.python", "entity.other.inherited-class.python"],
+      "settings": { "foreground": "#4ec9b0" }
+    },
+    {
+      "name": "Python decorator (Codist: C# Attribute notation gray italic)",
+      "scope": [
+        "entity.name.function.decorator.python",
+        "punctuation.definition.decorator.python"
+      ],
+      "settings": { "foreground": "#808080", "fontStyle": "italic" }
+    },
+    {
+      "name": "Python self / cls (Codist: C# this keyword blue italic)",
+      "scope": [
+        "variable.language.special.self.python",
+        "variable.language.special.cls.python",
+        "variable.parameter.function.language.special.self.python",
+        "variable.parameter.function.language.special.cls.python"
+      ],
+      "settings": { "foreground": "#569cd6", "fontStyle": "italic" }
+    },
+    {
+      "name": "Python function parameter (Codist: C# Parameter)",
+      "scope": ["variable.parameter.function.language.python", "variable.parameter.function-call.python"],
+      "settings": { "foreground": "#ff44a2", "fontStyle": "italic" }
+    },
+    {
+      "name": "Python builtin function (print/len/range...)",
+      "scope": "support.function.builtin.python",
+      "settings": { "foreground": "#dcdcaa" }
+    },
+    {
+      "name": "Python magic / dunder method (Codist: C# Method)",
+      "scope": "support.function.magic.python",
+      "settings": { "foreground": "#e46b6b" }
+    },
+    {
+      "name": "Python magic variable (__name__/__file__)",
+      "scope": "support.variable.magic.python",
+      "settings": { "foreground": "#beb469", "fontStyle": "italic" }
+    },
+    {
+      "name": "Python builtin type (int/str/float/bool/list...) (Codist: C# struct cyan-teal)",
+      "scope": "support.type.builtin.python",
+      "settings": { "foreground": "#4eb0c9" }
+    },
+    {
+      "name": "Python exception type (Codist: C# class teal)",
+      "scope": "support.type.exception.python",
+      "settings": { "foreground": "#4ec9b0" }
+    },
+    {
+      "name": "Python metaclass / generic type hint",
+      "scope": ["support.type.metaclass.python", "support.type.python"],
+      "settings": { "foreground": "#4ec9b0" }
+    },
+    {
+      "name": "Python f-string / format placeholder",
+      "scope": "constant.character.format.placeholder.other.python",
+      "settings": { "foreground": "#dcdcaa" }
+    },
+    {
+      "name": "Python string escape sequence",
+      "scope": "constant.character.escape.python",
+      "settings": { "foreground": "#d7ba7d" }
+    },
+    {
+      "name": "Python ellipsis '...'",
+      "scope": "constant.other.ellipsis.python",
+      "settings": { "foreground": "#569cd6" }
+    },
+    {
+      "name": "Python ALL_CAPS constant (Codist: C# Const field)",
+      "scope": "constant.other.caps.python",
+      "settings": { "foreground": "#c94ec9" }
+    }
+  ],
+  "semanticTokenColors": {
+    "namespace": "#ec00ec",
+    "class": "#4ec9b0",
+    "struct": "#4eb0c9",
+    "interface": "#00acff",
+    "enum": "#c94ec9",
+    "delegate": "#b5ffff",
+    "typeParameter": "#ffb693",
+    "field": { "foreground": "#acac00", "fontStyle": "italic" },
+    "field.static": { "foreground": "#acac00", "fontStyle": "italic underline" },
+    "field.readonly": { "foreground": "#808000", "fontStyle": "" },
+    "property": "#7abcfe",
+    "property.static": { "foreground": "#7abcfe", "fontStyle": "underline" },
+    "method": "#e46b6b",
+    "method.static": { "foreground": "#e46b6b", "fontStyle": "underline" },
+    "parameter": { "foreground": "#ff44a2", "fontStyle": "italic" },
+    "variable": { "foreground": "#beb469", "fontStyle": "italic" },
+    "variable.constant": "#c94ec9",
+    "*.constant": "#c94ec9",
+    "function": "#e46b6b",
+    "function.defaultLibrary": "#dcdcaa",
+    "function.declaration": "#e46b6b",
+    "decorator": { "foreground": "#808080", "fontStyle": "italic" },
+    "selfParameter": { "foreground": "#569cd6", "fontStyle": "italic" },
+    "clsParameter": { "foreground": "#569cd6", "fontStyle": "italic" },
+    "builtinConstant": { "foreground": "#569cd6", "fontStyle": "bold" },
+    "magicFunction": "#e46b6b",
+    "import": "#8080ff"
+  }
+}
