@@ -442,6 +442,7 @@
     "interface": "#00acff",
     "enum": "#c94ec9",
     "delegate": "#b5ffff",
+    "event": { "foreground": "#22FF91", "background": "#00400080" },
     "typeParameter": "#ffb693",
     "field": { "foreground": "#acac00", "fontStyle": "italic" },
     "field.static": { "foreground": "#acac00", "fontStyle": "italic underline" },
