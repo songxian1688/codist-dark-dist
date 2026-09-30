@@ -52,6 +52,6 @@ with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:
     z.write('codist-dark/package.json', 'extension/package.json')
     z.write('codist-dark/themes/codist-dark-color-theme.json',
             'extension/themes/codist-dark-color-theme.json')
-    z.write('codist-dark/README.md', 'extension/README.md')
+    z.write('README.md', 'extension/README.md')
 print('written:', os.path.abspath(out))
 EOF
